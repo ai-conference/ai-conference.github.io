@@ -492,7 +492,24 @@
         .program-content {
             color: #333;
         }
-    
+
+        .program-link {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .program-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
         footer {
             background: #330662;
             color: white;
@@ -575,7 +592,9 @@
             </section>
 
             <section id="speakers">
-                <h2>Plenary Speakers</h2>
+                <h2>Plenary Fireside Chat with Invited Guests</h2>
+                
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">AI, Policies, and Regulation</h3>
                 <div class="speakers-grid">
                     <div class="speaker-card">
                         <img src="https://discover.research.utoronto.ca/7532-avi-goldfarb/thumbnail" alt="Avi Goldfarb" class="speaker-photo">
@@ -592,10 +611,27 @@
                     </div>
                     
                     <div class="speaker-card">
+                        <img src="https://www.stern.nyu.edu/faculty/static/photos/asundara.tif?v=20250607055442" alt="Arun Sundararajan" class="speaker-photo">
+                        <h3>Arun Sundararajan</h3>
+                        <p class="speaker-affiliation">New York University, Stern School</p>
+                        <p class="speaker-bio">Harold Price Professor of Entrepreneurship and Professor of Technology, Operations & Statistics. Leading researcher on the sharing economy, digital transformation, and the future of work in the digital age.</p>
+                    </div>
+                </div>
+                
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">Emerging Research Frontiers for (Gen)AI Research</h3>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
                         <img src="https://mitsloan.mit.edu/sites/default/files/styles/profile_detail_headshot/public/profile-images/2024/12/27/profile-image-186855.jpeg?h=7f412c8f&itok=V1bflVKR" alt="John Horton" class="speaker-photo">
                         <h3>John Horton</h3>
                         <p class="speaker-affiliation">Massachusetts Institute of Technology, Sloan School</p>
                         <p class="speaker-bio">Professor and co-founder of Expected Parrot (AI powered market research platform), examining digital labor markets and economic effects of technological change on innovation.</p>
+                    </div>
+                    
+                    <div class="speaker-card">
+                        <img src="https://www.stern.nyu.edu/faculty/static/photos/nlevina.jpg?v=20250825170516" alt="Natalia Levina" class="speaker-photo">
+                        <h3>Natalia Levina</h3>
+                        <p class="speaker-affiliation">New York University, Stern School</p>
+                        <p class="speaker-bio">Paganelli-Bull Professor of Technology & International Business. Leading researcher on evaluation, adoption, and governance of artificial intelligence tools in organizations and building boundary spanning capabilities for innovation.</p>
                     </div>
 
                     <div class="speaker-card">
@@ -604,14 +640,7 @@
                         <p class="speaker-affiliation">Yale University, School of Management</p>
                         <p class="speaker-bio">James L. Frank '32 Professor of Private Enterprise and Management, Professor of Marketing, and an expert of digital marketing and artificial intelligence, marketing organizations and emerging markets.</p>
                     </div>
-                    
-                    <div class="speaker-card">
-                        <img src="https://www.stern.nyu.edu/faculty/static/photos/asundara.tif?v=20250607055442" alt="Arun Sundararajan" class="speaker-photo">
-                        <h3>Arun Sundararajan</h3>
-                        <p class="speaker-affiliation">New York University, Stern School</p>
-                        <p class="speaker-bio">Harold Price Professor of Entrepreneurship and Professor of Technology, Operations & Statistics. Leading researcher on the sharing economy, digital transformation, and the future of work in the digital age.</p>
-                    </div>
-                </div>
+                </div>            
             </section>
 
             <section id="topics">
@@ -659,25 +688,24 @@
             </section>
 
             <section id="program">
-                <h2>Program (Tentative)</h2>
+                <h2>Program </h2>
+                <p style="text-align: center; margin-bottom: 1rem;">
+                    <a href="https://docs.google.com/document/d/1qMUbyzrUtn1aYlTE93fD2ZJVLHRcXs4Y/" target="_blank" class="program-link">Click here for the detailed program</a>
+                </p>
                 <div class="program-schedule">
                     <div class="program-day">
                         <div class="program-date">September 11th, 2025</div>
                         <div class="program-item">
+                            <div class="program-time">3:30 PM</div>
+                            <div class="program-content">Poster Setup at Cantor Boardroom</div>
+                        </div>
+                        <div class="program-item">
                             <div class="program-time">4:00 PM</div>
-                            <div class="program-content">Welcome at Cantor (11th Floor)</div>
+                            <div class="program-content">Short Presentations at Cantor Boardroom (11th Floor)</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">4:40 PM</div>
-                            <div class="program-content">Plenary Short Presentations at Cantor Boardroom (11th Floor)</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">6:00 PM</div>
-                            <div class="program-content">Poster Presentation at Cantor </div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">6:00 PM</div>
-                            <div class="program-content">Reception at Cantor </div>
+                            <div class="program-time"></div>
+                            <div class="program-content">Poster Presentation and Reception at Cantor</div>
                         </div>
                     </div>
                     
@@ -688,8 +716,8 @@
                             <div class="program-content">Welcome, AI and Innovation at Cantor Boardroom (11th Floor)</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">9:30 AM</div>
-                            <div class="program-content">Invited Plenary Talks and Discussion at Cantor </div>
+                            <div class="program-time">9:20 AM</div>
+                            <div class="program-content">Fireside Chat with Invited Guests at Cantor</div>
                         </div>
                         <div class="program-item">
                             <div class="program-time">11:00 AM </div>
@@ -704,20 +732,16 @@
                             <div class="program-content">Parallel Sessions C/D</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">2:50 PM </div>
+                            <div class="program-time">3:10 PM </div>
                             <div class="program-content">Parallel Sessions E/F</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">4:00 PM</div>
-                            <div class="program-content">Invited Plenary Talks and Discussion at Cantor </div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">5:15 PM </div>
-                            <div class="program-content">Conclusion and Thank you at Cantor</div>
+                            <div class="program-time">4:20 PM</div>
+                            <div class="program-content">Fireside Chat with Invited Guests at Cantor</div>
                         </div>
                         <div class="program-item">
                             <div class="program-time">5:30 PM </div>
-                            <div class="program-content">Adjourn</div>
+                            <div class="program-content">Thank You and Adjourn at Cantor</div>
                         </div>
                     </div>
                 </div>
