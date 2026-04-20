@@ -453,42 +453,6 @@
             flex-wrap: wrap;
             margin-top: 2rem;
         }
-
-        .past-edition-link {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            z-index: 3;
-            display: inline-block;
-            background: rgba(255,255,255,0.15);
-            color: #ffffff;
-            border: 1px solid rgba(255,255,255,0.4);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            backdrop-filter: blur(6px);
-            transition: background 0.2s ease;
-        }
-        .past-edition-link:hover {
-            background: rgba(255,255,255,0.3);
-        }
-
-        .disabled-button {
-            display: inline-block;
-            background: rgba(74, 12, 122, 0.1);
-            color: #4a0c7a;
-            border: 2px solid #4a0c7a;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 0.5rem;
-            cursor: not-allowed;
-            opacity: 0.5;
-            pointer-events: none;
-        }
         .program-schedule {
             background: #f8fafc;
             padding: 2rem;
@@ -589,16 +553,15 @@
 <body>
     <div class="container">
         <header>
-            <a href="2025/" class="past-edition-link">WAICI 2025 →</a>
             <div class="header-content">
-                <p class="small-title">The Second Workshop On</p>
-                <img src="images/ai-innovation-logo.png" alt="AI and the Future of Collaborative Innovation" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+                <p class="small-title">The First Workshop On</p>
+                <img src="../images/ai-innovation-logo.png" alt="AI and the Future of Collaborative Innovation" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
                 
                 <div class="event-details">
                     <div class="detail-card">
                         <h3>📅 When</h3>
-                        <p>Workshop ⚙️: October 1st and 2nd, 2026<br>
-                        Reception 🍷: October 1st, 2026</p>
+                        <p>Workshop ⚙️: September 11th and 12th, 2025<br>
+                        Reception 🍷: September 11th, 2025</p>
                     </div>
                     <div class="detail-card">
                         <h3>📍 Where</h3>
@@ -613,156 +576,128 @@
             <div class="cta-section">
                 <h2>Call for Participation</h2>
                 <p>Submit your work on AI and collaborative innovation. We welcome both completed research and work in progress from scholars across information systems, marketing, strategy, economics, and related disciplines.</p>
-                <p><strong>Submission Deadline:</strong> May 20th, 2026</p>
+                <p><strong>Submission Deadline:</strong> July 1st, 2025</p>
+                <p><strong>Acceptance Notification:</strong> <s>July 8th</s> July 11th, 2025</p>
                 
                 <div class="action-buttons">
-                    <a href="#" class="program-button">Submit Your Work</a>
-                    <span class="disabled-button">Program</span>
-                    <span class="disabled-button">Registration</span>
+                    <a href="#" class="submit-button">Submit Your Work</a>
+                    <a href="#program" class="program-button">Program </a>
+                    <a href="#" class="submit-button">Registration</a>
                 </div>
             </div>
 
             <section id="about">
                 <h2>About the Workshop</h2>
-                <p>The Workshop on AI and the future of Collaborative Innovation (WAICI) brings together scholars from information systems, marketing, strategy and other disciplines to examine how artificial intelligence is transforming collaborative innovation across industries and institutions. Our focus encompasses the evolving landscape where AI technologies intersect with human collaboration, organizational innovation processes, and the broader ecosystem of knowledge creation and sharing.</p>
+                <p>This inaugural workshop brings together scholars from information systems, marketing, strategy and other disciplines to examine how artificial intelligence is transforming collaborative innovation across industries and institutions. Our focus encompasses the evolving landscape where AI technologies intersect with human collaboration, organizational innovation processes, and the broader ecosystem of knowledge creation and sharing.</p>
             </section>
 
             <section id="speakers">
                 <h2>Plenary Fireside Chat with Invited Guests</h2>
                 
-                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">Mentorship Panel: How to think about publication in this brave new world?</h3>
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">AI and the Evolving Human–Machine Mix of Work</h3>
                 <div class="speakers-grid">
                     <div class="speaker-card">
-                        <img src="images/2026/ravi_bapna.jpg" alt="Ravi Bapna" class="speaker-photo">
-                        <h3>Ravi Bapna</h3>
-                        <p class="speaker-affiliation">University of Minnesota, Carlson School</p>
-                        <p class="speaker-bio">Curtis L. Carlson Chair in Business Analytics &amp; Information Systems. Co-author of "Thrive: Maximizing Well-Being in the Age of AI." Leading expert on causal inference, AI/ML in business, and the economics of digital platforms.</p>
+                        <img src="https://discover.research.utoronto.ca/7532-avi-goldfarb/thumbnail" alt="Avi Goldfarb" class="speaker-photo">
+                        <h3>Avi Goldfarb</h3>
+                        <p class="speaker-affiliation">University of Toronto, Rotman School</p>
+                        <p class="speaker-bio">Rotman Chair in Artificial Intelligence and Healthcare, Professor of Marketing. Co-author of "Prediction Machines" and "Power and Prediction." Leading expert on the economics of artificial intelligence and digital markets.</p>
                     </div>
                     
                     <div class="speaker-card">
-                        <h3>To be announced</h3>
+                        <img src="https://www.uopeople.edu/wp-content/uploads/2022/07/shawn.jpg.webp" alt="Shawndra Hill" class="speaker-photo">
+                        <h3>Shawndra Hill</h3>
+                        <p class="speaker-affiliation">Meta (Facebook)</p>
+                        <p class="speaker-bio">Principal Scientist focused on AI applications in social platforms, collaborative technologies, and the intersection of artificial intelligence with human social behavior.</p>
                     </div>
                     
                     <div class="speaker-card">
-                        <h3>To be announced</h3>
+                        <img src="../images/2025/arun.png" alt="Arun Sundararajan" class="speaker-photo">
+                        <h3>Arun Sundararajan</h3>
+                        <p class="speaker-affiliation">New York University, Stern School</p>
+                        <p class="speaker-bio">Harold Price Professor of Entrepreneurship and Professor of Technology, Operations & Statistics. Leading researcher on the sharing economy, digital transformation, and the future of work in the digital age.</p>
                     </div>
                 </div>
                 
-                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">Plenary Panel: How is the world outside Academia thinking about AI and research</h3>
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">Emerging Research Frontiers for (Gen)AI Research</h3>
                 <div class="speakers-grid">
                     <div class="speaker-card">
-                        <img src="images/2026/anindya.png" alt="Anindya Ghose" class="speaker-photo">
-                        <h3>Anindya Ghose</h3>
+                        <img src="../images/2025/john.jpeg" alt="John Horton" class="speaker-photo">
+                        <h3>John Horton</h3>
+                        <p class="speaker-affiliation">Massachusetts Institute of Technology, Sloan School</p>
+                        <p class="speaker-bio">Professor and co-founder of Expected Parrot (AI powered market research platform), examining digital labor markets and economic effects of technological change on innovation.</p>
+                    </div>
+                    
+                    <div class="speaker-card">
+                        <img src="../images/2025/nlevina.jpg" alt="Natalia Levina" class="speaker-photo">
+                        <h3>Natalia Levina</h3>
                         <p class="speaker-affiliation">New York University, Stern School</p>
-                        <p class="speaker-bio">Heinz Riehl Chair Professor of Business and Director of the Masters of Business Analytics program. Author of "TAP: Unlocking the Mobile Economy." Leading expert on the economic consequences of digital, mobile, and AI technologies.</p>
+                        <p class="speaker-bio">Paganelli-Bull Professor of Technology & International Business. Leading researcher on evaluation, adoption, and governance of artificial intelligence tools in organizations and building boundary spanning capabilities for innovation.</p>
                     </div>
 
                     <div class="speaker-card">
-                        <img src="images/2026/Sonia_Jaffe.jpg" alt="Sonia Jaffe" class="speaker-photo">
-                        <h3>Sonia Jaffe</h3>
-                        <p class="speaker-affiliation">Microsoft, Office of the Chief Economist</p>
-                        <p class="speaker-bio">Principal Researcher at Microsoft. Leading expert on the economics of generative AI, studying how AI tools shape worker productivity, labor markets, and the future of knowledge work.</p>
+                        <img src="https://som.yale.edu/sites/default/files/styles/hero_card_1021_/public/profile_pictures/sudhir_k.jpg.webp?itok=-dt2CtQC" alt="To be confirmed" class="speaker-photo">
+                        <h3>K. Sudhir</h3>
+                        <p class="speaker-affiliation">Yale University, School of Management</p>
+                        <p class="speaker-bio">James L. Frank '32 Professor of Private Enterprise and Management, Professor of Marketing, and an expert of digital marketing and artificial intelligence, marketing organizations and emerging markets.</p>
                     </div>
-
-                    <div class="speaker-card">
-                        <h3>To be announced</h3>
-                    </div>
-                </div>
-
-                <h3 style="font-size: 1.5rem; font-weight: 600; color: #330662; margin: 2rem 0 1rem 0;">Plenary Panel 2: Theme to be announced</h3>
-                <div class="speakers-grid">
-                    <div class="speaker-card">
-                        <h3>To be announced</h3>
-                    </div>
-                    <div class="speaker-card">
-                        <h3>To be announced</h3>
-                    </div>
-                    <div class="speaker-card">
-                        <h3>To be announced</h3>
-                    </div>
-                </div>
+                </div>            
             </section>
 
             <section id="program">
                 <h2>Program </h2>
+                <p style="text-align: center; margin-bottom: 1rem;">
+                    <a href="https://docs.google.com/document/d/1qMUbyzrUtn1aYlTE93fD2ZJVLHRcXs4Y/" target="_blank" class="program-link">Click here for the detailed program</a>
+                </p>
                 <div class="program-schedule">
                     <div class="program-day">
-                        <div class="program-date">Day 1 — Thursday, October 1st, 2026</div>
+                        <div class="program-date">September 11th, 2025</div>
                         <div class="program-item">
-                            <div class="program-time">11:30 AM<br>– 12:30 PM</div>
-                            <div class="program-content">Opening Lunch for Junior Faculty Forum Attendees</div>
+                            <div class="program-time">3:30 PM</div>
+                            <div class="program-content">Poster Setup at Cantor Boardroom</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">12:30 PM<br>– 3:15 PM</div>
-                            <div class="program-content">Junior Faculty Forum <em>(restricted to Junior Faculty &amp; Mentors)</em></div>
+                            <div class="program-time">4:00 PM</div>
+                            <div class="program-content">Short Presentations at Cantor Boardroom (11th Floor)</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">12:30 PM<br>– 3:15 PM</div>
-                            <div class="program-content">Research Roundtables — small group discussions with Faculty Mentors</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">3:15 PM</div>
-                            <div class="program-content">Arrival &amp; Check-in (General Attendees)</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">3:15 PM<br>– 4:15 PM</div>
-                            <div class="program-content">Mentorship Panel: How to think about publication in this brave new world? <em>(open to all attendees)</em> — Panelists: Ravi Bapna, [TBA], [TBA] · Moderator: Raveesh Mayya</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">4:30 PM<br>– 5:15 PM</div>
-                            <div class="program-content">Plenary Short Presentations — 8 presentations × 5 minutes each (PhD/Postdocs)</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">5:15 PM onwards</div>
-                            <div class="program-content">Opening Reception — Networking, Food, and Drinks</div>
+                            <div class="program-time"></div>
+                            <div class="program-content">Poster Presentation and Reception at Cantor</div>
                         </div>
                     </div>
-
+                    
                     <div class="program-day">
-                        <div class="program-date">Day 2 — Friday, October 2nd, 2026</div>
+                        <div class="program-date">September 12th, 2025</div>
                         <div class="program-item">
-                            <div class="program-time">9:00 AM<br>– 10:15 AM</div>
-                            <div class="program-content">Plenary Panel Discussion 1 — Topic: [TBA] · Panelists: Anindya Ghose (NYU), [TBA], [TBA] · Moderator: Gal Oestreicher-Singer</div>
+                            <div class="program-time">9:00 AM</div>
+                            <div class="program-content">Welcome, AI and Innovation at Cantor Boardroom (11th Floor)</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">10:15 AM<br>– 10:30 AM</div>
-                            <div class="program-content">Break</div>
+                            <div class="program-time">9:20 AM</div>
+                            <div class="program-content">Fireside Chat with Invited Guests at Cantor</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">10:30 AM<br>– 11:45 AM</div>
-                            <div class="program-content">Parallel Sessions I — Concurrent Tracks (75 mins, Regular Faculty Presentations)</div>
+                            <div class="program-time">11:00 AM </div>
+                            <div class="program-content">Parallel Sessions A/B</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">11:45 AM<br>– 12:45 PM</div>
-                            <div class="program-content">Lunch</div>
+                            <div class="program-time">12:10 PM </div>
+                            <div class="program-content">Lunch at Cantor </div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">12:45 PM<br>– 2:00 PM</div>
-                            <div class="program-content">Plenary Panel Discussion 2 — Topic: [TBA] · Panelists: [TBA] (NYU), Sonia Jaffe (Microsoft Research) · Moderator: Arun Sundararajan</div>
+                            <div class="program-time">1:40 PM </div>
+                            <div class="program-content">Parallel Sessions C/D</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">2:00 PM<br>– 2:15 PM</div>
-                            <div class="program-content">Break</div>
+                            <div class="program-time">3:10 PM </div>
+                            <div class="program-content">Parallel Sessions E/F</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">2:15 PM<br>– 3:30 PM</div>
-                            <div class="program-content">Parallel Sessions II — Concurrent Tracks (75 mins, Regular Faculty Presentations)</div>
+                            <div class="program-time">4:20 PM</div>
+                            <div class="program-content">Fireside Chat with Invited Guests at Cantor</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">3:30 PM<br>– 4:00 PM</div>
-                            <div class="program-content">Coffee Break</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">4:00 PM<br>– 5:15 PM</div>
-                            <div class="program-content">Parallel Sessions III — Concurrent Tracks (75 mins, Regular Faculty Presentations)</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">5:15 PM<br>– 5:45 PM</div>
-                            <div class="program-content">Plenary Short Presentations — 6 presentations × 5 minutes each (PhD/Postdocs)</div>
-                        </div>
-                        <div class="program-item">
-                            <div class="program-time">5:45 PM</div>
-                            <div class="program-content">Closing Remarks</div>
+                            <div class="program-time">5:30 PM </div>
+                            <div class="program-content">Thank You and Adjourn at Cantor</div>
                         </div>
                     </div>
                 </div>
@@ -772,13 +707,13 @@
                 <h2>Workshop Organizers</h2>
                 <div class="organizers-grid">
                     <div class="organizer-card">
-                        <img src="images/galos.jpg" alt="Gal Oestreicher-Singer" class="organizer-photo">
+                        <img src="../images/galos.jpg" alt="Gal Oestreicher-Singer" class="organizer-photo">
                         <h3>Gal Oestreicher-Singer</h3>
                         <p><strong>Tel Aviv University</strong></p>
                         <p>Associate Dean of Research <br> Coller School of Management</p>
                     </div>
                     <div class="organizer-card">
-                        <img src="images/2019_Raveesh.JPG" alt="Raveesh Mayya" class="organizer-photo">
+                        <img src="../images/2019_Raveesh.JPG" alt="Raveesh Mayya" class="organizer-photo">
                         <h3>Raveesh Mayya</h3>
                         <p><strong>New York University</strong></p>
                         <p>Assistant Professor of Technology <br> Stern School of Business</p>
@@ -894,7 +829,7 @@
         </div>
 
         <footer>
-            <p>&copy; 2026 Workshop on AI and Collaborative Innovation</p>
+            <p>&copy; 2025 Workshop on AI and Collaborative Innovation</p>
             <p>For inquiries, contact: <a href="mailto:raveesh@stern.nyu.edu" style="color: #e6ccff;">ai-innovation@stern.nyu.edu</a></p>
         </footer>
     </div>
