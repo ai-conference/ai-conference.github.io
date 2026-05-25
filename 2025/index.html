@@ -558,11 +558,33 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .past-edition-link {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            z-index: 3;
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            backdrop-filter: blur(6px);
+            transition: background 0.2s ease;
+        }
+        .past-edition-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <a href="https://ai-conference.github.io/" class="past-edition-link">← WAICI 2026</a>
             <div class="header-content">
                 <p class="small-title">The First Workshop On</p>
                 <img src="../images/ai-innovation-logo.png" alt="AI and the Future of Collaborative Innovation" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
@@ -590,7 +612,6 @@
                 <p><strong>Acceptance Notification:</strong> <s>July 8th</s> July 11th, 2025</p>
                 
                 <div class="action-buttons">
-                    <a href="https://ai-conference.github.io/" class="program-button">← WAICI Homepage</a>
                     <a href="#program" class="program-button">Program </a>
                 </div>
             </div>
