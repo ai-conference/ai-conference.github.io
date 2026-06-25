@@ -538,6 +538,38 @@
             opacity: 0.5;
             pointer-events: none;
         }
+        .submit-closed {
+            display: inline-block;
+            position: relative;
+            background: #e2e8f0;
+            color: #64748b;
+            border: 2px solid #cbd5e1;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 0.5rem;
+            cursor: not-allowed;
+        }
+        .submit-closed::after {
+            content: "Submission deadline has passed";
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #330662;
+            color: #ffffff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        .submit-closed:hover::after {
+            opacity: 1;
+        }
         .program-schedule {
             background: #f8fafc;
             padding: 2rem;
@@ -676,10 +708,10 @@
                 <h2>Call for Participation</h2>
                 <p style="font-size: 1.1rem; font-weight: 600; color: #4a0c7a; margin-bottom: 0.75rem;">2026 Theme: Agents, Productivity, and the Future Workforce</p>
                 <p>Submit your work on AI and collaborative innovation. We welcome both completed research and work in progress from scholars across information systems, marketing, strategy, economics, and related disciplines.</p>
-                <p><strong>Submission Deadline:</strong> June 20th, 2026</p>
+                <p><strong>Submission Deadline:</strong> June 20th, 2026 <em style="color: #64748b;">(submissions are now closed)</em></p>
                 
                 <div class="action-buttons">
-                    <a href="https://forms.gle/YC1DxPa5FCfWAXuGA" class="program-button" target="_blank">Submit Your Work</a>
+                    <span class="submit-closed" aria-disabled="true">Submit Your Work</span>
                     <span class="disabled-button">Program</span>
                     <span class="disabled-button">Registration</span>
                 </div>
@@ -687,7 +719,7 @@
 
             <section id="about">
                 <h2>About the Workshop</h2>
-                <p>The Workshop on AI and the future of Collaborative Innovation (WAICI) brings together scholars from information systems, marketing, strategy and other disciplines to examine how artificial intelligence is transforming collaborative innovation across industries and institutions. Our focus encompasses the evolving landscape where AI technologies intersect with human collaboration, organizational innovation processes, and the broader ecosystem of knowledge creation and sharing.</p>
+                <p>The Workshop on AI and the Future of Collaborative Innovation (WAICI) brings together scholars from information systems, marketing, strategy, economics, and related fields to study how artificial intelligence is changing the way people, teams, and organizations create and share knowledge. We welcome rigorous empirical and theoretical research on how generative AI and AI agents affect collaboration, productivity, and innovation across firms, platforms, and institutions.</p>
             </section>
 
             <section id="speakers">
