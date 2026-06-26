@@ -538,22 +538,17 @@
             opacity: 0.5;
             pointer-events: none;
         }
-        .submit-closed {
-            display: inline-block;
+        .submit-closed-wrap {
             position: relative;
-            background: #e2e8f0;
-            color: #64748b;
-            border: 2px solid #cbd5e1;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
+            display: inline-block;
             margin: 0.5rem;
-            cursor: not-allowed;
         }
-        .submit-closed::after {
-            content: "Submission deadline has passed";
+        .submit-closed-wrap .disabled-button {
+            margin: 0;
+        }
+        .closed-tooltip {
             position: absolute;
-            bottom: 125%;
+            bottom: 115%;
             left: 50%;
             transform: translateX(-50%);
             background: #330662;
@@ -567,7 +562,7 @@
             pointer-events: none;
             transition: opacity 0.2s ease;
         }
-        .submit-closed:hover::after {
+        .submit-closed-wrap:hover .closed-tooltip {
             opacity: 1;
         }
         .program-schedule {
@@ -708,10 +703,13 @@
                 <h2>Call for Participation</h2>
                 <p style="font-size: 1.1rem; font-weight: 600; color: #4a0c7a; margin-bottom: 0.75rem;">2026 Theme: Agents, Productivity, and the Future Workforce</p>
                 <p>Submit your work on AI and collaborative innovation. We welcome both completed research and work in progress from scholars across information systems, marketing, strategy, economics, and related disciplines.</p>
-                <p><strong>Submission Deadline:</strong> June 20th, 2026 <em style="color: #64748b;">(submissions are now closed)</em></p>
+                <p style="margin-top: 1.75rem;"><strong>Submission Deadline:</strong> June 20th, 2026 <span style="display: inline-block; margin-left: 0.5rem; padding: 0.15rem 0.65rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: #ffffff; background: #4a0c7a; border-radius: 50px; vertical-align: middle;">Submissions Now Closed</span></p>
                 
                 <div class="action-buttons">
-                    <span class="submit-closed" aria-disabled="true">Submit Your Work</span>
+                    <span class="submit-closed-wrap">
+                        <span class="disabled-button" aria-disabled="true">Submit Your Work</span>
+                        <span class="closed-tooltip">Submission deadline has passed</span>
+                    </span>
                     <span class="disabled-button">Program</span>
                     <span class="disabled-button">Registration</span>
                 </div>
