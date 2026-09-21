@@ -538,12 +538,14 @@
             opacity: 0.5;
             pointer-events: none;
         }
-        .submit-closed-wrap {
+        .submit-closed-wrap,
+        .closed-wrap {
             position: relative;
             display: inline-block;
             margin: 0.5rem;
         }
-        .submit-closed-wrap .disabled-button {
+        .submit-closed-wrap .disabled-button,
+        .closed-wrap .disabled-button {
             margin: 0;
         }
         .closed-tooltip {
@@ -562,7 +564,8 @@
             pointer-events: none;
             transition: opacity 0.2s ease;
         }
-        .submit-closed-wrap:hover .closed-tooltip {
+        .submit-closed-wrap:hover .closed-tooltip,
+        .closed-wrap:hover .closed-tooltip {
             opacity: 1;
         }
         .program-schedule {
@@ -712,7 +715,10 @@
                         <span class="closed-tooltip">Submission deadline has passed</span>
                     </span>
                     <a href="#program" class="program-button">Program</a>
-                    <a href="#registration" class="program-button">Registration</a>
+                    <span class="closed-wrap">
+                        <span class="disabled-button" aria-disabled="true">Registration</span>
+                        <span class="closed-tooltip">Registration deadline has passed</span>
+                    </span>
                 </div>
             </div>
 
@@ -811,28 +817,28 @@
                     <div class="program-day">
                         <div class="program-date">Day 1 — Thursday, October 1st, 2026</div>
                         <div class="program-item">
-                            <div class="program-time">9:30 AM</div>
-                            <div class="program-content">Arrival &amp; Meet <em>(invited Junior Faculty Forum participants and Mentors only)</em></div>
+                            <div class="program-time">9:00 AM</div>
+                            <div class="program-content">Arrival &amp; Meet <em>(invited Junior Faculty Consortium participants and Mentors only)</em></div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">9:45 AM</div>
+                            <div class="program-time">9:30 AM</div>
                             <div class="program-content">Introduction</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">10:00 AM<br>– 12:00 PM</div>
-                            <div class="program-content">Mentorship Session — 2 parallel tracks, Junior Faculty Forum participants present their work <em>(invited only)</em></div>
+                            <div class="program-time">9:45 AM<br>– 12:00 PM</div>
+                            <div class="program-content">Junior Faculty Consortium, Session I — 2 parallel tracks: paper presentations, Career Vision, and Impact Statement discussions with mentors <em>(invited only)</em></div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">12:00 PM<br>– 1:00 PM</div>
+                            <div class="program-time">12:00 PM<br>– 12:45 PM</div>
                             <div class="program-content">Lunch</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">1:00 PM<br>– 3:15 PM</div>
-                            <div class="program-content">Career Vision &amp; Impact — Mentor Feedback Session <em>(invited only)</em></div>
+                            <div class="program-time">12:45 PM<br>– 3:00 PM</div>
+                            <div class="program-content">Junior Faculty Consortium, Session II — 2 parallel tracks: paper presentations, Career Vision, and Impact Statement discussions with mentors <em>(invited only)</em></div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">3:15 PM</div>
-                            <div class="program-content">Arrival &amp; Check-in (General Attendees)</div>
+                            <div class="program-time">3:00 PM</div>
+                            <div class="program-content">Arrival &amp; Check-in (General Attendees) · Poster setup begins</div>
                         </div>
                         <div class="program-item">
                             <div class="program-time">3:15 PM<br>– 4:15 PM</div>
@@ -843,8 +849,8 @@
                             <div class="program-content">Plenary Short Presentations — 8 presentations × 5 minutes each</div>
                         </div>
                         <div class="program-item">
-                            <div class="program-time">5:15 PM onwards</div>
-                            <div class="program-content">Opening Reception — Networking, Food, and Drinks</div>
+                            <div class="program-time">5:15 PM<br>– 6:30 PM</div>
+                            <div class="program-content">Opening Reception &amp; Poster Session — Networking, Food, and Drinks</div>
                         </div>
                     </div>
 
@@ -856,7 +862,7 @@
                         </div>
                         <div class="program-item">
                             <div class="program-time">8:30 AM<br>– 8:55 AM</div>
-                            <div class="program-content">Plenary Short Presentations — 4 presentations × 5 minutes each</div>
+                            <div class="program-content">Plenary Short Presentations — 5 presentations × 5 minutes each</div>
                         </div>
                         <div class="program-item">
                             <div class="program-time">9:00 AM<br>– 10:15 AM</div>
@@ -896,7 +902,7 @@
                         </div>
                         <div class="program-item">
                             <div class="program-time">5:15 PM<br>– 5:40 PM</div>
-                            <div class="program-content">Plenary Short Presentations — 4 presentations × 5 minutes each</div>
+                            <div class="program-content">Plenary Short Presentations — 5 presentations × 5 minutes each</div>
                         </div>
                         <div class="program-item">
                             <div class="program-time">5:40 PM</div>
@@ -998,8 +1004,12 @@
             </div>
     
             <div class="action-buttons">
-                <a href="https://www.eventbrite.com/e/2026-nyu-tau-workshop-on-ai-and-the-future-of-collaborative-innovation-registration-1991499201722" class="program-button" target="_blank">Register Here</a>
+                <span class="closed-wrap">
+                    <span class="disabled-button" aria-disabled="true">Register Here</span>
+                    <span class="closed-tooltip">Registration deadline has passed</span>
+                </span>
             </div>
+            <p style="max-width: 640px; margin: 1rem auto 0 auto; font-size: 0.95rem; color: #4a0c7a; font-weight: 600; text-align: center;">Registration is now closed. The registration deadline was September 20th, 2026.</p>
             <p style="max-width: 640px; margin: 1.25rem auto 0 auto; font-size: 0.85rem; color: #64748b; line-height: 1.6; text-align: center;"><strong>Please register with your official institutional email.</strong> In accordance with the NYU Campus Safety Office, registration does not automatically grant building access. Organizers must manually verify each participant's affiliation and add them to the NYU JRNY building-access system. That access email may arrive closer to the event, so thank you for your patience.</p>
         </div>   
     </main>
