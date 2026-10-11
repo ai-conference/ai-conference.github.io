@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Faculty Consortium | WAICI 2026 at NYU Stern</title>
+    <meta name="description" content="Invited participants and papers at the WAICI 2026 Junior Faculty Consortium, held at NYU Stern on October 1, 2026.">
+    <link rel="canonical" href="https://ai-conference.github.io/jfc/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai-conference.github.io/jfc/">
+    <meta property="og:title" content="Junior Faculty Consortium | WAICI 2026 at NYU Stern">
+    <meta property="og:description" content="Invited participants and papers at the WAICI 2026 Junior Faculty Consortium, held at NYU Stern on October 1, 2026.">
+    <meta property="og:image" content="https://ai-conference.github.io/images/ai-innovation-logo.png">
+    <meta property="og:site_name" content="WAICI">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #d1c4e9 0%, #b39ddb 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #b19cd9 0%, #8e6ba8 50%, #6b4d87 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.06)"/><circle cx="90" cy="90" r="1.2" fill="rgba(255,255,255,0.07)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .small-title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #ffffff, #e6ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .detail-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .detail-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #e6ccff;
+        }
+        
+        main {
+            padding: 4rem 2rem;
+        }
+        
+        section {
+            margin-bottom: 4rem;
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #330662;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(45deg, #8900e1, #330662);
+            border-radius: 2px;
+        }
+        
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .speakers-grid-2col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .speaker-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .speaker-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            display: block;
+            border: 3px solid #d1c4e9;
+        }
+        
+        .speaker-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #8900e1, #330662);
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .speaker-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #330662;
+        }
+        
+        .speaker-affiliation {
+            color: #8900e1;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .speaker-bio {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .organizers {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e6ccff 100%);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .organizers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .organizer-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .organizer-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            display: block;
+            border: 4px solid #d1c4e9;
+        }
+        
+        .registration {
+            background: linear-gradient(135deg, #fff8e1 0%, #e6ccff 100%);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #8900e1;
+        }
+        
+        .pricing-card h4 {
+            color: #330662;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8900e1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-currency {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .pricing-description {
+            color: #666;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+        
+        .register-button {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .register-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        
+        .sponsors {
+            background: linear-gradient(135deg, #330662 0%, #57068c 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .sponsors h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .sponsors h2::after {
+            background: linear-gradient(45deg, #ffffff, #e6ccff);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .sponsors-container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .sponsors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .sponsor-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+        }
+        
+        .sponsor-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .sponsor-card h4 {
+            color: #e6ccff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .sponsor-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .sponsor-card a:hover {
+            color: #e6ccff;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #d1c4e9 0%, #b39ddb 50%, #9575cd 100%);
+            color: #2c1810;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .cta-section h2 {
+            color: #2c1810;
+        }
+        
+        .cta-section h2::after {
+            background: linear-gradient(45deg, #6b4d87, #8e6ba8);
+        }
+        
+        .cta-button, .program-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+        
+        .program-button {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+        
+        .submit-button {
+            display: inline-block;
+            background: rgba(74, 12, 122, 0.1);
+            color: #4a0c7a;
+            border: 2px solid #4a0c7a;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        
+        .cta-button:hover, .program-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .topics-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .topic-item {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #8900e1;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .past-edition-link {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            z-index: 3;
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            backdrop-filter: blur(6px);
+            transition: background 0.2s ease;
+        }
+        .past-edition-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .disabled-button {
+            display: inline-block;
+            background: rgba(74, 12, 122, 0.1);
+            color: #4a0c7a;
+            border: 2px solid #4a0c7a;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            cursor: not-allowed;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .submit-closed-wrap,
+        .closed-wrap {
+            position: relative;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        .submit-closed-wrap .disabled-button,
+        .closed-wrap .disabled-button {
+            margin: 0;
+        }
+        .closed-tooltip {
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #330662;
+            color: #ffffff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        .submit-closed-wrap:hover .closed-tooltip,
+        .closed-wrap:hover .closed-tooltip {
+            opacity: 1;
+        }
+        .program-schedule {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        
+        .program-day {
+            margin-bottom: 2rem;
+        }
+        
+        .program-date {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #330662;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #d1c4e9;
+            padding-bottom: 0.5rem;
+        }
+        
+        .program-item {
+            display: flex;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .program-time {
+            font-weight: 600;
+            color: #8900e1;
+            width: 120px;
+            flex-shrink: 0;
+        }
+        
+        .program-content {
+            color: #333;
+        }
+
+        .program-link {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .program-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background: #330662;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                margin: 1rem;
+                border-radius: 15px;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            header {
+                padding: 3rem 1rem;
+                padding-top: 4.5rem;
+            }
+
+            .past-edition-link {
+                top: 1rem;
+                right: 1rem;
+                font-size: 0.8rem;
+                padding: 0.4rem 0.9rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .sponsors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .speakers-grid-2col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <style>
+        .lead { font-size: 1.05rem; margin-bottom: 1.5rem; }
+        .program-content { flex: 1; }
+        .session-note { display: block; font-size: 0.9rem; color: #64748b; margin-top: 0.25rem; }
+        .talks { margin: 0.75rem 0 0 1.3rem; padding: 0; }
+        .talks.timed { list-style: none; margin-left: 0; }
+        .talks li { margin-bottom: 0.8rem; }
+        .talk-title { display: block; font-weight: 600; color: #330662; }
+        .talk-time { font-weight: 600; color: #8900e1; margin-right: 0.5rem; }
+        .talk-authors { display: block; font-size: 0.95rem; }
+        .track { margin-top: 1.2rem; }
+        .track h3 { font-size: 1.1rem; font-weight: 600; color: #4a0c7a; margin-bottom: 0.4rem; }
+        .track .room { font-weight: 400; color: #6b4d87; font-size: 0.95rem; }
+        @media (max-width: 768px) {
+            .program-item { flex-direction: column; }
+            .program-time { width: auto; margin-bottom: 0.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="past-edition-link">← WAICI 2026 home</a>
+            <div class="header-content">
+                <p class="small-title">The Second Workshop On</p>
+                <a href="../"><img src="../images/ai-innovation-logo.png" alt="WAICI 2026 at NYU Stern: Workshop on AI and the Future of Collaborative Innovation" style="max-width: 100%; height: auto; margin-bottom: 1rem;"></a>
+                <p style="font-size: 1.5rem; font-weight: 600; opacity: 0.95; margin-bottom: 1.5rem;">2026 Theme: <em>Agents, Productivity, and the Future Workforce</em></p>
+                <h1 style="margin-bottom: 0;">WAICI 2026 Junior Faculty Consortium</h1>
+            </div>
+        </header>
+        <main>
+            <p class="lead">The WAICI 2026 Junior Faculty Consortium met on Thursday, October 1, 2026, from 9:00 AM to 3:00 PM at NYU Stern (Abbe-Bogen Faculty Lounge, KMC 11-185, and Cantor Boardroom, 11th Floor), ahead of the main workshop. Participation was by invitation. Participants presented a paper and discussed their career vision and impact statement with mentors and peers.</p>
+            <p style="text-align: center;"><a href="https://docs.google.com/document/d/1TNR_e27DCVZgIhywhAfd7ujhxEJd82Jx/" target="_blank" rel="nofollow noopener" class="program-link">List as a Google Doc</a></p>
+            <section id="participants">
+                <h2>Invited Participants and Their Papers</h2>
+                <div class="program-schedule">
+                    <ol class="talks"><li><span class="talk-title">Measuring Strategization in Recommendation: Users Adapt Their Behavior to Shape Future Content</span><span class="talk-authors"><strong>Jennifer Allen</strong> (NYU Stern)</span></li><li><span class="talk-title">Opening the Black Box of Human-AI Innovation: Generation, Selection, and the Role of Teams</span><span class="talk-authors"><strong>Charles Ayoubi</strong> (ESSEC Business School)</span></li><li><span class="talk-title">Less Traffic, More Attention? A Field Experiment on Publisher AI Summaries</span><span class="talk-authors"><strong>Mohsen Foroughifar</strong> (CMU Tepper)</span></li><li><span class="talk-title">Multimodal AI Feedback Improves Teaching Quality and Student Engagement Nationwide But Unevenly</span><span class="talk-authors"><strong>Yumei He</strong> (Tulane University)</span></li><li><span class="talk-title">AI Adoption and Productivity in Healthcare</span><span class="talk-authors"><strong>Manuel Hoffmann</strong> (UC Irvine)</span></li><li><span class="talk-title">Encouraging Online Content Contributions with Peer Recognition and Platform Rewards: Evidence from a Field Experiment and Structural Model</span><span class="talk-authors"><strong>Yikun Jiang</strong> (Purdue Daniels)</span></li><li><span class="talk-title">AI Algorithms and Collusion in Ad Auctions</span><span class="talk-authors"><strong>Aditya Karanam</strong> (UT Dallas Jindal)</span></li><li><span class="talk-title">Attunement Costs: How Interaction Locks Users into Specific LLMs</span><span class="talk-authors"><strong>Daniel Obermeier</strong> (LMU Munich)</span></li><li><span class="talk-title">The Price of Misreporting: Measuring the Effect of Strategic Behavior in Online Platforms</span><span class="talk-authors"><strong>Marios Papachristou</strong> (ASU Carey)</span></li><li><span class="talk-title">Generative AI in Low-Resource Classrooms</span><span class="talk-authors"><strong>Vasundhara Sharma</strong> (Indian School of Business)</span></li><li><span class="talk-title">When Social AI Agents Help or Hurt: Dual Agency and Goal Incongruence in Influencer Platforms</span><span class="talk-authors"><strong>Xiang (Shawn) Wan</strong> (UH Bauer)</span></li><li><span class="talk-title">From Build to Learn: How Generative AI Reshapes Product Experimentation</span><span class="talk-authors"><strong>Xiaoning (Gavin) Wang</strong> (Purdue Daniels)</span></li><li><span class="talk-title">Can Explanations Improve Recommendations? Evidence from Prediction-Informed Explanations</span><span class="talk-authors"><strong>Yuyan Wang</strong> (Stanford GSB)</span></li><li><span class="talk-title">Governing Human Judgment for Calibrated Reliance in Human-AI Collaboration: An Assemblage Perspective</span><span class="talk-authors"><strong>Thomas E. Ware III</strong> (Pittsburgh Katz)</span></li><li><span class="talk-title">Latent Communication in Adversarial Negotiation: Structural Alignment, Not Content Transmission</span><span class="talk-authors"><strong>Peiyan (Pearl) Yu</strong> (UGA Terry)</span></li></ol>
+                </div>
+                <p style="margin-top: 1.5rem;">See the <a href="../program/">full WAICI 2026 program</a>.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Workshop on AI and Collaborative Innovation</p>
+            <p>For inquiries, contact: <a href="mailto:raveesh@stern.nyu.edu" style="color: #e6ccff;">ai-innovation@stern.nyu.edu</a></p>
+        </footer>
+    </div>
+</body>
+</html>

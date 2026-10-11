@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program | WAICI 2026 at NYU Stern</title>
+    <meta name="description" content="Full program of WAICI 2026, the Workshop on AI and the Future of Collaborative Innovation at NYU Stern, October 1–2, 2026: plenary panels, parallel sessions, and short presentations, with authors.">
+    <link rel="canonical" href="https://ai-conference.github.io/program/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai-conference.github.io/program/">
+    <meta property="og:title" content="Program | WAICI 2026 at NYU Stern">
+    <meta property="og:description" content="Full program of WAICI 2026, the Workshop on AI and the Future of Collaborative Innovation at NYU Stern, October 1–2, 2026: plenary panels, parallel sessions, and short presentations, with authors.">
+    <meta property="og:image" content="https://ai-conference.github.io/images/ai-innovation-logo.png">
+    <meta property="og:site_name" content="WAICI">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #d1c4e9 0%, #b39ddb 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #b19cd9 0%, #8e6ba8 50%, #6b4d87 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.06)"/><circle cx="90" cy="90" r="1.2" fill="rgba(255,255,255,0.07)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .small-title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #ffffff, #e6ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .detail-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .detail-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #e6ccff;
+        }
+        
+        main {
+            padding: 4rem 2rem;
+        }
+        
+        section {
+            margin-bottom: 4rem;
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #330662;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(45deg, #8900e1, #330662);
+            border-radius: 2px;
+        }
+        
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .speakers-grid-2col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .speaker-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .speaker-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            display: block;
+            border: 3px solid #d1c4e9;
+        }
+        
+        .speaker-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #8900e1, #330662);
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .speaker-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #330662;
+        }
+        
+        .speaker-affiliation {
+            color: #8900e1;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .speaker-bio {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .organizers {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e6ccff 100%);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .organizers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .organizer-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .organizer-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            display: block;
+            border: 4px solid #d1c4e9;
+        }
+        
+        .registration {
+            background: linear-gradient(135deg, #fff8e1 0%, #e6ccff 100%);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #8900e1;
+        }
+        
+        .pricing-card h4 {
+            color: #330662;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8900e1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-currency {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .pricing-description {
+            color: #666;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+        
+        .register-button {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .register-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        
+        .sponsors {
+            background: linear-gradient(135deg, #330662 0%, #57068c 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .sponsors h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .sponsors h2::after {
+            background: linear-gradient(45deg, #ffffff, #e6ccff);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .sponsors-container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .sponsors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .sponsor-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+        }
+        
+        .sponsor-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .sponsor-card h4 {
+            color: #e6ccff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .sponsor-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .sponsor-card a:hover {
+            color: #e6ccff;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #d1c4e9 0%, #b39ddb 50%, #9575cd 100%);
+            color: #2c1810;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+        
+        .cta-section h2 {
+            color: #2c1810;
+        }
+        
+        .cta-section h2::after {
+            background: linear-gradient(45deg, #6b4d87, #8e6ba8);
+        }
+        
+        .cta-button, .program-button {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+        
+        .program-button {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+        
+        .submit-button {
+            display: inline-block;
+            background: rgba(74, 12, 122, 0.1);
+            color: #4a0c7a;
+            border: 2px solid #4a0c7a;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        
+        .cta-button:hover, .program-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .topics-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .topic-item {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #8900e1;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .past-edition-link {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            z-index: 3;
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            backdrop-filter: blur(6px);
+            transition: background 0.2s ease;
+        }
+        .past-edition-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .disabled-button {
+            display: inline-block;
+            background: rgba(74, 12, 122, 0.1);
+            color: #4a0c7a;
+            border: 2px solid #4a0c7a;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            cursor: not-allowed;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .submit-closed-wrap,
+        .closed-wrap {
+            position: relative;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        .submit-closed-wrap .disabled-button,
+        .closed-wrap .disabled-button {
+            margin: 0;
+        }
+        .closed-tooltip {
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #330662;
+            color: #ffffff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        .submit-closed-wrap:hover .closed-tooltip,
+        .closed-wrap:hover .closed-tooltip {
+            opacity: 1;
+        }
+        .program-schedule {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        
+        .program-day {
+            margin-bottom: 2rem;
+        }
+        
+        .program-date {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #330662;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #d1c4e9;
+            padding-bottom: 0.5rem;
+        }
+        
+        .program-item {
+            display: flex;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .program-time {
+            font-weight: 600;
+            color: #8900e1;
+            width: 120px;
+            flex-shrink: 0;
+        }
+        
+        .program-content {
+            color: #333;
+        }
+
+        .program-link {
+            display: inline-block;
+            background: #4a0c7a;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .program-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background: #330662;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                margin: 1rem;
+                border-radius: 15px;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            header {
+                padding: 3rem 1rem;
+                padding-top: 4.5rem;
+            }
+
+            .past-edition-link {
+                top: 1rem;
+                right: 1rem;
+                font-size: 0.8rem;
+                padding: 0.4rem 0.9rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .sponsors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .speakers-grid-2col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <style>
+        .lead { font-size: 1.05rem; margin-bottom: 1.5rem; }
+        .program-content { flex: 1; }
+        .session-note { display: block; font-size: 0.9rem; color: #64748b; margin-top: 0.25rem; }
+        .talks { margin: 0.75rem 0 0 1.3rem; padding: 0; }
+        .talks.timed { list-style: none; margin-left: 0; }
+        .talks li { margin-bottom: 0.8rem; }
+        .talk-title { display: block; font-weight: 600; color: #330662; }
+        .talk-time { font-weight: 600; color: #8900e1; margin-right: 0.5rem; }
+        .talk-authors { display: block; font-size: 0.95rem; }
+        .track { margin-top: 1.2rem; }
+        .track h3 { font-size: 1.1rem; font-weight: 600; color: #4a0c7a; margin-bottom: 0.4rem; }
+        .track .room { font-weight: 400; color: #6b4d87; font-size: 0.95rem; }
+        @media (max-width: 768px) {
+            .program-item { flex-direction: column; }
+            .program-time { width: auto; margin-bottom: 0.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="past-edition-link">← WAICI 2026 home</a>
+            <div class="header-content">
+                <p class="small-title">The Second Workshop On</p>
+                <a href="../"><img src="../images/ai-innovation-logo.png" alt="WAICI 2026 at NYU Stern: Workshop on AI and the Future of Collaborative Innovation" style="max-width: 100%; height: auto; margin-bottom: 1rem;"></a>
+                <p style="font-size: 1.5rem; font-weight: 600; opacity: 0.95; margin-bottom: 1.5rem;">2026 Theme: <em>Agents, Productivity, and the Future Workforce</em></p>
+                <h1 style="margin-bottom: 0;">WAICI 2026 Program</h1>
+            </div>
+        </header>
+        <main>
+            <p class="lead">WAICI 2026, the second Workshop on AI and the Future of Collaborative Innovation, took place at NYU Stern School of Business (Kaufman Management Center, 44 West 4th Street, New York) on October 1–2, 2026. The 2026 theme was <em>Agents, Productivity, and the Future Workforce</em>.</p>
+            <p style="text-align: center;"><a href="https://docs.google.com/document/d/1MG8Js_MlTi6KMJsFQxbT_B1bMWueMlO-/" target="_blank" rel="nofollow noopener" class="program-link">Program as a Google Doc</a></p>
+            <section id="day-1">
+                <h2>Day 1 · Thursday, October 1, 2026</h2>
+                <div class="program-schedule">
+                    <div class="program-item"><div class="program-time">9:00 AM<br>– 3:00 PM</div><div class="program-content"><strong>Junior Faculty Consortium</strong> (invited participants and mentors only). <a href="../jfc/">Participants and papers</a><span class="session-note">Abbe-Bogen Faculty Lounge (KMC 11-185) and Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">3:00 PM</div><div class="program-content">Arrival and check-in for all attendees. Poster setup begins.<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">3:15 PM<br>– 4:15 PM</div><div class="program-content"><strong>Plenary Panel 1: How to think about publication in this brave new world?</strong><br>Panelists: Ravi Bapna (SCU Leavey), Gordon Burtch (BU Questrom), Olivia Sheng (ASU W. P. Carey)<br>Moderator: Arun Sundararajan (NYU Stern)<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">4:30 PM<br>– 5:15 PM</div><div class="program-content"><strong>Plenary Short Presentations</strong> (5 minutes each). Presenting authors in bold.<ol class="talks" start="1"><li><span class="talk-title">Latent Communication in Adversarial Negotiation: Structural Alignment, Not Content Transmission</span><span class="talk-authors">Huaqin Zhao, Yiwei Li, Yifan Zhou, Tianming Liu, <strong>Peiyan Yu</strong> (UGA)</span></li><li><span class="talk-title">When Social AI Agents Help or Hurt: Dual Agency and Goal Incongruence in Influencer Platforms</span><span class="talk-authors"><strong>Xiang</strong> <strong>(Shawn) Wan</strong> (University of Houston); Allen Li (University of Wisconsin–Madison); Ying Ji and Chaoyue Gao (University of Science and Technology of China)</span></li><li><span class="talk-title">Opening the Black Box of Human-AI Innovation: Generation, Selection, and the Role of Teams</span><span class="talk-authors"><strong>Charles Ayoubi (ESSEC)</strong>, Fabrizio Dell&#x27;Acqua (HBS), Karim Lakhani (HBS)</span></li><li><span class="talk-title">Governing Human Judgment for Calibrated Reliance in Human-AI Collaboration: An Assemblage Perspective</span><span class="talk-authors"><strong>Thomas E. Ware III</strong> (Pittsburgh) and Aaron Baird (Colorado State University)</span></li><li><span class="talk-title">AI Adoption and Productivity in Healthcare</span><span class="talk-authors">Erkmen Aslim (U Vermont), <strong>Manuel Hoffmann</strong> (UC Irvine), Haonan Yin (UC Irvine)</span></li><li><span class="talk-title">AI Exposure and Organizational Structure</span><span class="talk-authors"><strong>Guohou Shan</strong> (NEU DMSB), Feng Zhu (HBS)</span></li><li><span class="talk-title">The Evolving Teams Behind AI Delegation</span><span class="talk-authors"><strong>Jingyi Sun</strong> (Stevens Institute of Technology)</span></li><li><span class="talk-title">Who Wins When AI Creates? AI Content Agents and the Economics of Creation</span><span class="talk-authors"><strong>Jiali Zhou</strong> (AU Kogod), Xin Weng (Fuzhou University)</span></li></ol></div></div>
+                    <div class="program-item"><div class="program-time">5:15 PM<br>– 6:30 PM</div><div class="program-content"><strong>Opening Reception and Poster Session</strong>: networking, food, and drinks<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                </div>
+            </section>
+            <section id="day-2">
+                <h2>Day 2 · Friday, October 2, 2026</h2>
+                <div class="program-schedule">
+                    <div class="program-item"><div class="program-time">8:00 AM<br>– 9:00 AM</div><div class="program-content">Light Breakfast<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">8:30 AM<br>– 8:55 AM</div><div class="program-content"><strong>Plenary Short Presentations</strong> (5 minutes each)<ol class="talks" start="9"><li><span class="talk-title">Negotiate with AI: SVO, Fairness, and Negotiation Engagement</span><span class="talk-authors"><strong>Bixiang Han</strong> (SIT), Bei Yan (SIT)</span></li><li><span class="talk-title">GENI: GenAI-Assisted Causal Inference for Latent Content Attributes with Emotional Language in Digital Headlines</span><span class="talk-authors"><strong>Xinyue Zhao</strong> (Temple University), Xueming Luo (Temple University)</span></li><li><span class="talk-title">The Impact of AI Companions on Mobility Patterns: Evidence from Character AI</span><span class="talk-authors"><strong>Yuxin Geng</strong> (UMN), Jason Chan (UMN)</span></li><li><span class="talk-title">From Words to Faces: Multimodal Trust Cues and Property Demand in the Sharing Economy</span><span class="talk-authors"><strong>Fan Feng</strong> (Baruch College), Chaoqun Deng (Baruch College)</span></li><li><span class="talk-title">From Visible Opinions to Strategic Disclosure: AI-Enabled Market Analytics and Higher-Order Beliefs in Digital Investment Platforms</span><span class="talk-authors"><strong>Yutong Zhang (University of Colorado Boulder)</strong>, Lan Sang (University of Colorado Boulder)</span></li></ol></div></div>
+                    <div class="program-item"><div class="program-time">9:00 AM<br>– 10:15 AM</div><div class="program-content"><strong>Plenary Panel 2: The Applied Economist’s Playbook - AI, Markets, and Policy Beyond Academia</strong><br>Panelists: Anindya Ghose (NYU Stern), Sonia Jaffe (Microsoft), Beibei Li (CMU Heinz)<br>Moderator: Raveesh Mayya (NYU Stern)<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">10:15 AM<br>– 10:30 AM</div><div class="program-content">Break</div></div>
+                    <div class="program-item"><div class="program-time">10:30 AM<br>– 11:45 AM</div><div class="program-content"><strong>Parallel Sessions I</strong> (4th Floor)<span class="session-note">15 minutes per talk plus 3 minutes of Q&amp;A. Presenting authors in bold.</span><div class="track"><h3>GenAI and Labor Reorganization <span class="room">· Room 4-80</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">10:30</span>Generative AI and the Reorganization of Labor Demand</span><span class="talk-authors">Fangyan Wang (Purdue), <strong>Zaiyan Wei</strong> (Purdue), Yang Wang (Purdue)</span></li><li><span class="talk-title"><span class="talk-time">10:48</span>How Generative AI Reorganizes Knowledge Work</span><span class="talk-authors"><strong>Xueming Luo</strong> (Temple University), Jason Miao (Hong Kong Polytechnic University), K. Sudhir (Yale School of Management)</span></li><li><span class="talk-title"><span class="talk-time">11:06</span>Artificial Intelligence and Workforce Skill Development</span><span class="talk-authors"><strong>Arvind Karunakaran</strong> (Stanford), Roshni Raveendhran (University of Virginia), Tami Kim (Dartmouth)</span></li><li><span class="talk-title"><span class="talk-time">11:24</span>The Impact of Generative AI on Skill Demand</span><span class="talk-authors"><strong>Sojung Yoon</strong> (University of Minnesota), Wen Wen (University of Texas, Austin), Zixi Lei (University of Texas, Austin), Jason Chan (University of Minnesota)</span></li></ul></div><div class="track"><h3>Decision Making with AI <span class="room">· Room 4-90</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">10:30</span>The Prediction Trap: Humans Prefer Algorithms That Predict Well To Algorithms That Perform Well</span><span class="talk-authors"><strong>Matthew DosSantos DiSorbo</strong> (HBS), Kris Johnson Ferreira (HBS)</span></li><li><span class="talk-title"><span class="talk-time">10:48</span>The Democratization Paradox: Evaluating Generative AI&#x27;s Analytical Competence in Retail Investing</span><span class="talk-authors"><strong>Zonghao Yang</strong> (Stevens), Qian Pan (Stevens), Zhenyu Cui (Stevens)</span></li><li><span class="talk-title"><span class="talk-time">11:06</span>The Phantom AI: Expert Decision-Making in AI-Deprived Contexts</span><span class="talk-authors">Yanina Lebed-Malul (TAU), <strong>Yael Inbar</strong> (TAU), Lior Zalmanson (TAU)</span></li><li><span class="talk-title"><span class="talk-time">11:24</span>Metacognitive AI and Peer Information in Collective Decisions</span><span class="talk-authors"><strong>Charlie Cheng</strong> (UMD), Eaman Jahani (UMD), Siva Viswanathan (UMD)</span></li></ul></div><div class="track"><h3>AI Agents in Operations <span class="room">· Room 4-120</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">10:30</span>AI Agents for Inventory Control: Human-LLM-OR Complementarity</span><span class="talk-authors"><strong>Jackie Baek</strong> (NYU Stern), Yaopeng Fu (Columbia), Will Ma (Columbia), Tianyi Peng (Columbia)</span></li><li><span class="talk-title"><span class="talk-time">10:48</span>Scaling the Returns to Automation: Algorithms, Robots and Organizational Learning</span><span class="talk-authors">Dogukan Yilmaz (INSEAD), <strong>Christian Peukert</strong> (HEC Lausanne)</span></li><li><span class="talk-title"><span class="talk-time">11:06</span>Designing Theory-Based Agents for Agentic Commerce</span><span class="talk-authors">Dean Elron (Tel Aviv University), Oliver Hinz (Goethe University Frankfurt), Maximilian Lowin (Goethe University Frankfurt), <strong>Shachar Reichman</strong> (Tel Aviv University), Moritz von Zahn (Goethe University Frankfurt)</span></li><li><span class="talk-title"><span class="talk-time">11:24</span>When LLM Agents Negotiate: Private Information and Dynamic Bargaining in Supply Chains</span><span class="talk-authors"><strong>Chen Liang</strong> (UConn), Fasheng Xu (UConn)</span></li></ul></div></div></div>
+                    <div class="program-item"><div class="program-time">11:45 AM<br>– 12:45 PM</div><div class="program-content">Lunch<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">12:45 PM<br>– 2:00 PM</div><div class="program-content"><strong>Plenary Panel 3: Future of AI and Innovation Research</strong><br>Panelists: Vasant Dhar (NYU Stern), Inbal Yahav (TAU Coller), Ahmed Abbasi (Notre Dame)<br>Moderator: Gal Oestreicher-Singer (TAU Coller)<span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">2:00 PM<br>– 2:15 PM</div><div class="program-content">Break</div></div>
+                    <div class="program-item"><div class="program-time">2:15 PM<br>– 3:30 PM</div><div class="program-content"><strong>Parallel Sessions II</strong> (4th Floor)<span class="session-note">15 minutes per talk plus 3 minutes of Q&amp;A. Presenting authors in bold.</span><div class="track"><h3>Agents in Online Communities <span class="room">· Room 4-80</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">2:15</span>Do Agents Repair When Challenged -- or Just Reply? Challenge, Repair, and Public Correction in a Deployed Agent Forum</span><span class="talk-authors"><strong>Luyang Zhang</strong> (CMU), Yi-Yun Chu (CMU/McGill), Jialu Wang (UC Santa Cruz), Beibei Li (CMU), Ramayya Krishnan (CMU)</span></li><li><span class="talk-title"><span class="talk-time">2:33</span>Same Structure, Different Trajectories: Community Dissolution on an AI Agent Social Platform</span><span class="talk-authors"><strong>Shichao Jia</strong> (Stevens Institute of Technology)</span></li><li><span class="talk-title"><span class="talk-time">2:51</span>Can AI agents improve Online Discourse Quality and Representation?</span><span class="talk-authors"><strong>Ishita Chakraborty</strong> (UW-Madison), Xingjian You (UW-Madison), Shrabastee Banerjee (Tilburg)</span></li><li><span class="talk-title"><span class="talk-time">3:09</span>When AI Streamers Build or Break Live Streaming Communities: The Roles of Anthropomorphism, AI Efficacy, and Sense of Community</span><span class="talk-authors"><strong>Yuqian Liu</strong> (Baruch College), Chaoqun Deng (Baruch College)</span></li></ul></div><div class="track"><h3>Gen. and Algorithmic AI in Marketing <span class="room">· Room 4-90</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">2:15</span>Tell Me the Truth: Conjoint Analysis in the LLM Era</span><span class="talk-authors"><strong>Ruben R Salas</strong> (Wharton), Kartik Hosanagar (Wharton)</span></li><li><span class="talk-title"><span class="talk-time">2:33</span>Algorithm or Creative? A Three-Arm Experimental Design for Decomposing Algorithmic Bias in Platform A/B Tests</span><span class="talk-authors"><strong>Pallavi Pal (Stevens)</strong>, Anjana Susarla (Eli Broad College of Business, Michigan State University)</span></li><li><span class="talk-title"><span class="talk-time">2:51</span>Judging a Cover by its Book: A Deep Learning Approach for Understanding and Enhancing Media Cover Success</span><span class="talk-authors">Yijing Xu (UW-Madison), <strong>Remi Daviet</strong> (INSEAD)</span></li><li><span class="talk-title"><span class="talk-time">3:09</span>Tuning towards Fairness: Conditional Disentangled Image Generation</span><span class="talk-authors"><strong>Yi Gan</strong> (GT Scheller), Pan Li (GT Scheller), Jie Xu (Jiaxing University), D.J. Wu (GT Scheller), Min Ding (PSU Smeal)</span></li></ul></div><div class="track"><h3>Signal Integrity under AI <span class="room">· Room 4-120</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">2:15</span>Just Be Human – Cognitive Bias-based Modelling to Distinguish Humans from LLMs</span><span class="talk-authors">Rotem Dgani (TAU), <strong>Tomer Geva</strong> (TAU), Ariel Goldstein (Cambridge University and the Hebrew University of Jerusalem)</span></li><li><span class="talk-title"><span class="talk-time">2:33</span>Correcting Toward the Wrong Target: LLM-Annotated Regressors Under Noisy Human Benchmarks</span><span class="talk-authors"><strong>Gijs Overgoor</strong> (SMU), Samsun Knight (University of Toronto - Rotman), Yakov Bart (Northeastern)</span></li><li><span class="talk-title"><span class="talk-time">2:51</span>Signal Compression and Adaptive Questioning in AI-Mediated Interviews</span><span class="talk-authors"><strong>Gili Rusak</strong> (Harvard), John J. Horton (MIT Sloan School of Management)</span></li><li><span class="talk-title"><span class="talk-time">3:09</span>Collusion in the Cards: AI Detection and Explanation with LLMs</span><span class="talk-authors"><strong>Kan Xu</strong> (ASU Carey), Xu Wang (Peking University)</span></li></ul></div></div></div>
+                    <div class="program-item"><div class="program-time">3:30 PM<br>– 4:00 PM</div><div class="program-content">Coffee Break<span class="session-note">Room 4-60 (4th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">4:00 PM<br>– 4:54 PM</div><div class="program-content"><strong>Parallel Sessions III</strong> (4th Floor)<span class="session-note">15 minutes per talk plus 3 minutes of Q&amp;A. Presenting authors in bold.</span><div class="track"><h3>AI and Platform Markets <span class="room">· Room 4-80</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">4:00</span>Generative AI Search on Content Creation Platform: Evidence from a Large-Scale Field Experiment</span><span class="talk-authors"><strong>Hongxian Huang</strong> (NYU Stern), Jinglong Zhang, Jason Chan (UMN Carlson), Anindya Ghose (NYU Stern)</span></li><li><span class="talk-title"><span class="talk-time">4:18</span>Two-Sided Effects of Content Cost Restrictions in AI Model Marketplaces: Evidence from Civitai</span><span class="talk-authors"><strong>Xiaoxiao Wang</strong> (Temple Fox), Jinyang Zheng (Rochester Simon), Sunil Wattal (Temple Fox), Subodha Kumar (Temple Fox)</span></li><li><span class="talk-title"><span class="talk-time">4:36</span>When Search Stops Sending Traffic: The Impact of Google AI Overviews on Organic Traffic Monetization in E-Commerce</span><span class="talk-authors"><strong>Qiwei Han (Nova SBE)</strong>, Yufei Shen (Nova SBE), Maximilian Kaiser (Hamburg)</span></li></ul></div><div class="track"><h3>Agentic Markets and Restructuring <span class="room">· Room 4-90</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">4:00</span>GenAI for All? Unequal Impacts on Women in STEM Entrepreneurship</span><span class="talk-authors"><strong>Bowen Lou</strong> (USC Marshall), Jiayi Bao (TAMU Mays), Hongshen Sun (MIT)</span></li><li><span class="talk-title"><span class="talk-time">4:18</span>Breaking AI Collusion with Consumer AI</span><span class="talk-authors">Charlie Cheng (UMD), <strong>Manmohan Aseri</strong> (UMD)</span></li><li><span class="talk-title"><span class="talk-time">4:36</span>Strategic Response of News Publishers to Generative AI</span><span class="talk-authors"><strong>Hangcheng Zhao (Rutgers)</strong>, Ron Berman (University of Pennsylvania)</span></li></ul></div><div class="track"><h3>Productivity and Uneven Gains from AI <span class="room">· Room 4-120</span></h3><ul class="talks timed"><li><span class="talk-title"><span class="talk-time">4:00</span>When AI Supports Emotionally Demanding Service Work: Experimental Evidence from Customer Service Interactions</span><span class="talk-authors"><strong>Lei Wang</strong> (IU), Hanyi Min (UIUC), Veda Duddu (UIUC), Koustuv Saha (UIUC), Vedant Das Swain (NYU)</span></li><li><span class="talk-title"><span class="talk-time">4:18</span>AI-Augmented Green Jobs and Corporate Climate Performance: Evidence from U.S. Firms and Facilities</span><span class="talk-authors"><strong>Chengxin Cao</strong> (Baruch College), Ling Xue (University of Georgia), Gautam Ray (University of Minnesota)</span></li><li><span class="talk-title"><span class="talk-time">4:36</span>Meeting Arturito and Robotina: Evidence of Performance-Accessibility Tradeoffs from Robotic Digital Guidance</span><span class="talk-authors"><strong>Sofía Calderón</strong> (Notre Dame), Ahmed Abbasi (Notre Dame), Ken Kelley (Notre Dame)</span></li></ul></div></div></div>
+                    <div class="program-item"><div class="program-time">5:10 PM<br>– 5:40 PM</div><div class="program-content"><strong>Closing Plenary Short Presentations</strong> (5 minutes each)<ol class="talks" start="14"><li><span class="talk-title">Generative AI Content Governance and Market Outcomes: Evidence from Food Delivery Platforms</span><span class="talk-authors"><strong>Jingwei Dai</strong>  (CMU Heinz), Beibei Li (CMU Heinz), Rahul Telang (CMU Heinz)</span></li><li><span class="talk-title">Beyond Automation: Calibrated Centaur Judgment in Human-AI Evaluation</span><span class="talk-authors">Kejia Hu (Oxford), Bowen Lou (USC), <strong>Mengwei Qu</strong> (UConn)</span></li><li><span class="talk-title">When LLMs Hurt More than Help: Understanding Decision Failures Under AI Assistance</span><span class="talk-authors"><strong>Jessica Shi</strong> (NYU Stern), Divya Singhvi (NYU Stern), Somya Singhvi (USC Marshall)</span></li><li><span class="talk-title">Specialization Trade-Offs in a General-Purpose Technology: The case of Open Foundation Models’ Ecosystems.</span><span class="talk-authors"><strong>Mostafa Khoshbash</strong> (UC Santa Barbara), Mary Tripsas (UC Santa Barbara)</span></li><li><span class="talk-title">Shielding Without Search: Covert AI Agents and Personalized Pricing on Hybrid Marketplaces</span><span class="talk-authors"><strong>Nipun Thakurele</strong> (NYU Stern)</span></li></ol><span class="session-note">Cantor Boardroom (11th Floor)</span></div></div>
+                    <div class="program-item"><div class="program-time">5:40 PM</div><div class="program-content">Closing Remarks</div></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Workshop on AI and Collaborative Innovation</p>
+            <p>For inquiries, contact: <a href="mailto:raveesh@stern.nyu.edu" style="color: #e6ccff;">ai-innovation@stern.nyu.edu</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# WAICI: Workshop on AI and the Future of Collaborative Innovation
+
+> WAICI is an academic workshop held at NYU Stern School of Business in New York City. It is co-organized by Raveesh Mayya (NYU Stern) and Gal Oestreicher-Singer (Tel Aviv University, Coller School of Management). It brings together scholars from information systems, marketing, strategy, economics, and related fields who study how artificial intelligence changes collaboration, productivity, and innovation. WAICI is not the same event as WAIC, the World Artificial Intelligence Conference in Shanghai.
+
+## Editions
+
+- WAICI 2026 (second edition): October 1–2, 2026, NYU Stern, Kaufman Management Center, 44 West 4th Street, New York. Theme: Agents, Productivity, and the Future Workforce. Included a Junior Faculty Consortium on October 1, three plenary panels, parallel sessions, plenary short presentations, and a poster reception.
+- WAICI 2025 (inaugural edition): September 11–12, 2025, NYU Stern, New York.
+
+## Pages
+
+- [WAICI 2026 home](https://ai-conference.github.io/): overview, invited guests, schedule, and sponsors
+- [WAICI 2026 program](https://ai-conference.github.io/program/): every plenary panel, parallel session, and short presentation, with authors
+- [WAICI 2026 Junior Faculty Consortium](https://ai-conference.github.io/jfc/): invited participants and their papers
+- [WAICI 2025](https://ai-conference.github.io/2025/): the inaugural workshop
+
+## WAICI 2026 plenary panels
+
+- How to think about publication in this brave new world? Panelists: Ravi Bapna (Santa Clara University), Gordon Burtch (Boston University), Olivia Sheng (Arizona State University). Moderator: Arun Sundararajan (NYU Stern).
+- The Applied Economist's Playbook: AI, Markets, and Policy Beyond Academia. Panelists: Anindya Ghose (NYU Stern), Sonia Jaffe (Microsoft), Beibei Li (Carnegie Mellon University). Moderator: Raveesh Mayya (NYU Stern).
+- Future of AI and Innovation Research. Panelists: Vasant Dhar (NYU Stern), Inbal Yahav (Tel Aviv University), Ahmed Abbasi (University of Notre Dame). Moderator: Gal Oestreicher-Singer (Tel Aviv University).
+
+## WAICI 2025 plenary fireside chats
+
+- AI and the Evolving Human–Machine Mix of Work. Guests: Avi Goldfarb (University of Toronto, Rotman School), Shawndra Hill (Meta), Arun Sundararajan (NYU Stern). Moderator: Gal Oestreicher-Singer (Tel Aviv University).
+- Emerging Research Frontiers for (Gen)AI Research. Guests: John Horton (MIT Sloan School), Natalia Levina (NYU Stern), K. Sudhir (Yale School of Management). Moderator: Raveesh Mayya (NYU Stern).
+
+## Organizers
+
+- Raveesh Mayya (NYU Stern School of Business) has co-organized WAICI since the inaugural 2025 workshop. He moderated the 2025 fireside chat on emerging research frontiers and the 2026 panel "The Applied Economist's Playbook."
+- Gal Oestreicher-Singer (Tel Aviv University, Coller School of Management) has co-organized WAICI since the inaugural 2025 workshop. She moderated the 2025 fireside chat on the human–machine mix of work and the 2026 panel "Future of AI and Innovation Research."
