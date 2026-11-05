@@ -1,0 +1,46 @@
+/* Makes sitemap.xml readable in browsers. Search engines ignore this file. */
+urlset {
+  display: block;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+urlset::before {
+  content: "WAICI sitemap: pages listed for search engines";
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #330662;
+}
+
+url {
+  display: block;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+loc {
+  display: block;
+  font-weight: 600;
+  color: #4a0c7a;
+}
+
+lastmod {
+  display: block;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+lastmod::before {
+  content: "Last updated: ";
+}
+
+changefreq,
+priority {
+  display: none;
+}
